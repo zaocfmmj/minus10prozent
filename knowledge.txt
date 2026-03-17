@@ -1,7 +1,7 @@
 SPICKZETTEL<br>
 <br>
 <td>Freilaufkörperbreiten:<td><br>
-<table style="width:100%;border-collapse:collapse;border:1px solid #ddd;">
+<table style="width:100%;font-size:12px;border-collapse:collapse;border:1px solid #ddd;">
   <tr style="background:#f6f6f6;">
     <th style="padding:15px 12px;border-right:1px solid #ddd;">Freilaufkörper</th>
     <th style="padding:15px 12px;">HG 32,9mm (7sp)</th>
