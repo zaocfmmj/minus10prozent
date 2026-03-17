@@ -4,22 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Prozent Rechner</title>
-
-<!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
-
-<!-- iOS Fullscreen & Statusbar -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="RB Rechner">
-
-<!-- iOS Icon -->
 <link rel="apple-touch-icon" href="icon-180.png">
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;}
-.container{background:white;border-radius:22px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,0.25);max-width:420px;width:100%;}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);}
+
+.app-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.container {
+  background: white;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.knowledge-toggle {
+  position:absolute;top:15px;right:15px;width:28px;height:28px;background:#fff;border-radius:0 0 0 4px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.8),2px 2px 0 rgba(0,0,0,0.05);
+  cursor:pointer;z-index:10;transition:all 0.2s ease;
+}
+.knowledge-toggle::before {
+  content:'';position:absolute;top:0;right:0;width:0;height:0;border:6px solid transparent;
+  border-top:6px solid #f0f0f0;border-right:6px solid #e0e0e0;transform:rotate(45deg);transform-origin:0 0;
+}
+.knowledge-toggle:hover{transform:scale(1.05);box-shadow:0 3px 12px rgba(0,0,0,0.2);}
+.knowledge-toggle.active::before{border-top-color:#667eea;border-right-color:#5a67d8;}
+
+/* Knowledge base full screen */
+.knowledge-screen {
+  position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  display:none;justify-content:center;align-items:center;padding:20px;z-index:100;overflow-y:auto;
+}
+.knowledge-container {
+  background:white;border-radius:22px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,0.4);max-width:500px;width:100%;max-height:90vh;overflow-y:auto;
+}
+.kb-entry{margin-bottom:20px;}
+.kb-entry:last-child{margin-bottom:0;}
+.kb-title{font-weight:bold;font-size:18px;margin-bottom:8px;color:#333;}
+.kb-content{font-size:16px;color:#555;line-height:1.5;}
+
+.back-button {
+  position:absolute;top:20px;left:20px;width:44px;height:44px;border-radius:50%;background:#fff;
+  border:none;cursor:pointer;font-size:18px;color:#667eea;box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
 h1{color:#667eea;text-align:center;margin-bottom:22px;font-size:24px;}
 .input-group{margin-bottom:25px;}
 label{display:block;margin-bottom:10px;color:#555;font-size:16px;}
@@ -31,39 +90,48 @@ input:focus{outline:none;border-color:#667eea;}
 .highlight{border:3px solid black;background:#ffffff;padding:20px;margin-bottom:18px;}
 .big{font-size:30px;}
 @media (min-width:700px){.container{max-width:520px;padding:36px;}input{font-size:26px;padding:20px;}.result-value{font-size:28px;}.big{font-size:36px;}}
+@media (max-width:480px){.app-container{padding:15px;}}
 </style>
+
 </head>
 <body>
 
-<div class="container">
+<div class="app-container" id="app-container">
+  <div class="container">
+    <h1>Prozent Rechner</h1>
+    <div class="knowledge-toggle" id="kb-toggle"></div>
+    
+    <div class="input-group">
+      <label>Betrag eingeben</label>
+      <input type="text" inputmode="decimal" id="eingabe" placeholder="0" autofocus>
+    </div>
 
-<h1>Prozent Rechner</h1>
+    <div class="result-group highlight">
+      <div class="result-label">÷12 × 11</div>
+      <div class="result-value big" id="r1">0,00</div>
+    </div>
 
-<div class="input-group">
-<label>Betrag eingeben</label>
-<input type="text" inputmode="decimal" id="eingabe" placeholder="0" autofocus>
+    <div class="result-group">
+      <div class="result-label">-10%</div>
+      <div class="result-value" id="r2">0,00</div>
+    </div>
+
+    <div class="result-group">
+      <div class="result-label">-20%</div>
+      <div class="result-value" id="r3">0,00</div>
+    </div>
+
+    <div class="result-group">
+      <div class="result-label">+20%</div>
+      <div class="result-value" id="r4">0,00</div>
+    </div>
+  </div>
 </div>
 
-<div class="result-group highlight">
-<div class="result-label">÷12 × 11</div>
-<div class="result-value big" id="r1">0,00</div>
-</div>
-
-<div class="result-group">
-<div class="result-label">-10%</div>
-<div class="result-value" id="r2">0,00</div>
-</div>
-
-<div class="result-group">
-<div class="result-label">-20%</div>
-<div class="result-value" id="r3">0,00</div>
-</div>
-
-<div class="result-group">
-<div class="result-label">+20%</div>
-<div class="result-value" id="r4">0,00</div>
-</div>
-
+<!-- Full screen knowledge base -->
+<div class="knowledge-screen" id="knowledge-screen">
+  <button class="back-button" id="back-button">←</button>
+  <div class="knowledge-container" id="knowledge-container"></div>
 </div>
 
 <script>
@@ -72,19 +140,65 @@ const r1 = document.getElementById("r1");
 const r2 = document.getElementById("r2");
 const r3 = document.getElementById("r3");
 const r4 = document.getElementById("r4");
+const kbToggle = document.getElementById("kb-toggle");
+const knowledgeScreen = document.getElementById("knowledge-screen");
+const backButton = document.getElementById("back-button");
+const knowledgeContainer = document.getElementById("knowledge-container");
+const appContainer = document.getElementById("app-container");
 
 function format(num){return num.toFixed(2).replace(".",",");}
 
 function berechnen(){
-let value = eingabeField.value.replace(",",".");
-let x = parseFloat(value)||0;
-r1.textContent = format((x/12)*11);
-r2.textContent = format(x*0.9);
-r3.textContent = format(x*0.8);
-r4.textContent = format(x*1.2);
+  let value = eingabeField.value.replace(",",".");
+  let x = parseFloat(value)||0;
+  r1.textContent = format((x/12)*11);
+  r2.textContent = format(x*0.9);
+  r3.textContent = format(x*0.8);
+  r4.textContent = format(x*1.2);
 }
 
-eingabeField.addEventListener("input",berechnen);
+async function loadKnowledge() {
+  try {
+    const response = await fetch('knowledge.txt');
+    const text = await response.text();
+    const entries = text.split('---').map(block => {
+      const lines = block.trim().split('\n');
+      return {
+        title: lines[0] || 'Kein Titel',
+        content: lines.slice(1).join('<br>')
+      };
+    }).filter(entry => entry.title !== 'Kein Titel');
+    return entries;
+  } catch (e) {
+    return [{title: "Fehler", content: "knowledge.txt nicht gefunden.<br>Erstellen Sie eine knowledge.txt Datei."}];
+  }
+}
+
+function showKnowledge() {
+  appContainer.style.display = 'none';
+  knowledgeScreen.style.display = 'flex';
+  kbToggle.classList.add('active');
+  loadKnowledge().then(entries => {
+    knowledgeContainer.innerHTML = entries.map(entry => 
+      `<div class="kb-entry">
+        <div class="kb-title">${entry.title}</div>
+        <div class="kb-content">${entry.content}</div>
+      </div>`
+    ).join('');
+  });
+}
+
+function hideKnowledge() {
+  knowledgeScreen.style.display = 'none';
+  appContainer.style.display = 'flex';
+  kbToggle.classList.remove('active');
+}
+
+kbToggle.addEventListener("click", showKnowledge);
+backButton.addEventListener("click", hideKnowledge);
+
+eingabeField.addEventListener("input", berechnen);
+berechnen();
 </script>
 
 </body>
