@@ -75,4 +75,4 @@ hier platz zum testen. glückwunsch dass du es gefunden hast :)
 </table>
 <b>Microspline:</b> 23 Zähne, 26mm breit<br>
 <b>HG L2 (Road 12-fach):</b> 18 Zähne, 37,65mm breit<br>
-<a href="https://productinfo.shimano.com/en/compatibility/C-731">Details bei shimano.com</a>
+<a href="https://productinfo.shimano.com/en/compatibility/C-731">Tabelle von Shimano mit mehr Details</a>
