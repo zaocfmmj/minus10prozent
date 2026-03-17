@@ -1,19 +1,79 @@
 SPICKZETTEL<br>
 <br>
 Freilaufkörperbreiten:<br>
-
 <table style="width:100%;border-collapse:collapse;border:1px solid #ddd;">
   <tr style="background:#f6f6f6;">
-    <th style="padding:15px 12px;border-right:1px solid #ddd;">Funktion</th>
-    <th style="padding:15px 12px;">Berechnung</th>
+    <th style="padding:15px 12px;border-right:1px solid #ddd;">Freilaufkörper</th>
+    <th style="padding:15px 12px;">HG 32,9mm (7sp)</th>
+    <th style="padding:15px 12px;">HG 35mm (8/9/10sp + 11sp-MTB)</th>
+    <th style="padding:15px 12px;">HG 36,8mm (11sp-Road)</th>
+    <th style="padding:15px 12px;">HG L2 (12sp-Road)</th>
+    <th style="padding:15px 12px;">Microspline (12sp-MTB)</th>
+ 
   </tr>
   <tr>
-    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>÷12 × 11</b></td>
-    <td style="padding:15px 12px;">Monatliche Rate (11/12 Tilgung)</td>
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>7-fach</b></td>
+    <td style="padding:15px 12px;">ja</td>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
-    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>-10%</b></td>
-    <td style="padding:15px 12px;">Rabatt 10% (×0.9)</td>
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>8-fach</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>9-fach</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>10-fach</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>11-fach MTB</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>11-fach Road</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>12-fach Road</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>12-fach MTB</b></td>
+    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">ja</th>
   </tr>
 </table>
 
