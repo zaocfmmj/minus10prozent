@@ -1,3 +1,10 @@
 SPICKZETTEL<br>
 <br>
-Freilaufkörperbreiten:
+Freilaufkörperbreiten:<br>
+<table>
+<td>Freilaufkörper</td>
+<td>7-fach</td>
+<tr>
+<td>HG 35mm</td>
+<td>ja</td>
+</table>
