@@ -55,12 +55,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:l
   right: 15px;
   width: 28px;
   height: 28px;
-  background: #fdfdfd;        /* Papery off-white */
+  background: #fdfdfd;     
   z-index: 1000;
   cursor: pointer;
   transition: all 0.2s ease;
   
-  /* PURE TRIANGLE - 90° corner at TOP-RIGHT */
   clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
   
   box-shadow: 
@@ -86,10 +85,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:l
 
 .knowledge-toggle.active {
   background: #667eea;
-}
-
-.knowledge-toggle.active::before {
-  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
 }
 
 /* Knowledge base full screen */
