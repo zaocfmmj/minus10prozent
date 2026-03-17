@@ -1,5 +1,4 @@
 SPICKZETTEL<br>
-<br>
 <td>Freilaufkörperbreiten:<td><br>
 <table style="width:100%;font-size:12px;border-collapse:collapse;border:1px solid #ddd;">
   <tr style="background:#f6f6f6;">
