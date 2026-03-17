@@ -51,47 +51,46 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;background:l
 
 .knowledge-toggle {
   position: fixed;
-  top: 12px;      /* Flush with screen top */
-  right: 12px;    /* Flush with screen right */
-  width: 0;
-  height: 0;
+  top: 15px;
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  background: #fdfdfd;        /* Papery off-white */
   z-index: 1000;
   cursor: pointer;
   transition: all 0.2s ease;
   
-  /* RIGHT-ANGLE TRIANGLE - 90° corner at TOP-RIGHT */
-  border-top: 28px solid #fdfdfd;    /* Papery off-white */
-  border-left: 28px solid transparent;
+  /* PURE TRIANGLE - 90° corner at TOP-RIGHT */
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
   
-  /* Paper shadow */
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.25));
+  box-shadow: 
+    0 2px 8px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.9);
 }
 
 .knowledge-toggle::before {
   content: '';
   position: absolute;
-  top: -26px;
-  right: -26px;
-  width: 24px;
-  height: 24px;
+  top: 2px;
+  right: 0;
+  bottom: 2px;
+  left: 2px;
   background: linear-gradient(135deg, #fcfcfc 0%, #f8f8f8 100%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%); /* Inner paper fold */
-  border-radius: 0 2px 0 2px;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
 }
 
 .knowledge-toggle:hover {
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 
 .knowledge-toggle.active {
-  border-top-color: #667eea;  /* Blue when active */
+  background: #667eea;
 }
 
 .knowledge-toggle.active::before {
   background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
 }
-
 
 /* Knowledge base full screen */
 .knowledge-screen {
