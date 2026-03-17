@@ -1,6 +1,21 @@
 SPICKZETTEL<br>
 <br>
 Freilaufkörperbreiten:<br>
+
+<table style="width:100%;border-collapse:collapse;border:1px solid #ddd;">
+  <tr style="background:#f6f6f6;">
+    <th style="padding:15px 12px;border-right:1px solid #ddd;">Funktion</th>
+    <th style="padding:15px 12px;">Berechnung</th>
+  </tr>
+  <tr>
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>÷12 × 11</b></td>
+    <td style="padding:15px 12px;">Monatliche Rate (11/12 Tilgung)</td>
+  </tr>
+  <tr style="background:#f9f9f9;">
+    <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>-10%</b></td>
+    <td style="padding:15px 12px;">Rabatt 10% (×0.9)</td>
+  </tr>
+</table>
 <table>
 <td>Freilaufkörper</td>
 <td>7-fach</td>
