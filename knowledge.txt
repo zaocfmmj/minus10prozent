@@ -21,59 +21,61 @@ Freilaufkörperbreiten:<br>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>8-fach</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <td style="padding:15px 12px;">+ 4,5mm (z.B. 11er Ritzel)</td>
+    <th style="padding:15px 12px;"ja</th>
+    <th style="padding:15px 12px;">+ 1,8mm Spacer</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>9-fach</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <td style="padding:15px 12px;">+ 4,5mm (z.B. 11er Ritzel)</td>
     <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">+ 1,8mm Spacer</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>10-fach</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <td style="padding:15px 12px;">+ 4,5mm (z.B. 11er Ritzel)</td>
     <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">+ 1,8mm Spacer</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>11-fach MTB</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <td style="padding:15px 12px;">+ 4,5mm (z.B. 11er Ritzel)</td>
     <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">+1,8mm Spacer</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>11-fach Road</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <td style="padding:15px 12px;">nein</td>
+    <th style="padding:15px 12px;">nein</th>
     <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>12-fach Road</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
+    <td style="padding:15px 12px;">+nein</td>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
     <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <th style="padding:15px 12px;">nein</th>
   </tr>
   <tr style="background:#f9f9f9;">
     <td style="padding:15px 12px;border-right:1px solid #ddd;"><b>12-fach MTB</b></td>
-    <td style="padding:15px 12px;">+4,5mm (z.B. 11er Ritzel)</td>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
-    <th style="padding:15px 12px;">ja</th>
+    <td style="padding:15px 12px;">nein</td>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
+    <th style="padding:15px 12px;">nein</th>
     <th style="padding:15px 12px;">ja</th>
   </tr>
 </table>
+<br><td>Microspline: 23 Zähne, 26mm breit<td>
+<br><td>HG L2 (Road 12-fach): 18 Zähne, 37,65mm breit<td>
 
