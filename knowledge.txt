@@ -16,10 +16,4 @@ Freilaufkörperbreiten:<br>
     <td style="padding:15px 12px;">Rabatt 10% (×0.9)</td>
   </tr>
 </table>
-<table>
-<td>Freilaufkörper</td>
-<td>7-fach</td>
-<tr>
-<td>HG 35mm</td>
-<td>ja</td>
-</table>
+
